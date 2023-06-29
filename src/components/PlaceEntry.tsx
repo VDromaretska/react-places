@@ -1,5 +1,6 @@
 interface PlaceEntryProps {
     imageURL: string;
+    imageAlt: string;
     placeName: string;
     countryName: string;
     mapURL: string;
@@ -8,7 +9,7 @@ interface PlaceEntryProps {
 function PlaceEntry(props:PlaceEntryProps): JSX.Element{
     return (
         <section>
-            <img src={props.imageURL} ></img>
+            <img src={props.imageURL} alt={props.imageAlt} ></img>
             <h2>{props.placeName}</h2>
             <h3>{props.countryName}</h3>
             <p>{props.text}</p>
