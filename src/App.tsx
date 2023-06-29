@@ -1,15 +1,13 @@
 import PageHeader from "./components/PageHeader";
 import MainContent from "./components/MainContent";
 
-
-
 function App(): JSX.Element {
-  return ( 
+  return (
     <>
-    <PageHeader />
-    <MainContent />
+      <PageHeader />
+      <MainContent />
     </>
-  )
+  );
 }
 
 export default App;
