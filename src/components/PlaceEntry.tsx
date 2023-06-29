@@ -9,7 +9,7 @@ interface PlaceEntryProps {
 function PlaceEntry(props: PlaceEntryProps): JSX.Element {
   return (
     <section>
-      <img src={props.imageURL} alt={props.imageAlt}></img>
+      <img src={props.imageURL} alt={props.imageAlt} width="100%"/>
       <h2>{props.placeName}</h2>
       <h3>{props.countryName}</h3>
       <p>{props.text}</p>

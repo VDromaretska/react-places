@@ -4,7 +4,7 @@ function MainContent(): JSX.Element {
   return (
     <main>
       <PlaceEntry
-        imageURL={"./image/poveglia.jpg"}
+        imageURL={"./poveglia.jpg"}
         imageAlt={"poveglia"}
         placeName={"Poveglia Island"}
         countryName={"Italy"}
