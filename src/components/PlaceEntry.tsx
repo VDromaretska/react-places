@@ -1,3 +1,5 @@
+import "./PlaceEntry.css";
+
 interface PlaceEntryProps {
   imageURL: string;
   imageAlt: string;
@@ -8,8 +10,8 @@ interface PlaceEntryProps {
 }
 function PlaceEntry(props: PlaceEntryProps): JSX.Element {
   return (
-    <section>
-      <img src={props.imageURL} alt={props.imageAlt} />
+    <section className="flex-card">
+      <img src={props.imageURL} alt={props.imageAlt} className="card-image" />
       <h2>{props.placeName}</h2>
       <h3>{props.countryName}</h3>
       <p>{props.text}</p>

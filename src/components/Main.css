@@ -1,0 +1,21 @@
+html {
+  background: #cdeae4;
+}
+.flex-container {
+  border: 3px;
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.header {
+  text-align: center;
+  margin: 2rem;
+  padding: 2rem;
+}
+.footer {
+  text-align: center;
+  margin: 2rem;
+  padding: 2rem;
+}

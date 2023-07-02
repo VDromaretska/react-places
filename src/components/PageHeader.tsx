@@ -1,6 +1,8 @@
+import "./Main.css";
+
 function PageHeader(): JSX.Element {
   return (
-    <header>
+    <header className="header">
       <h1>Creepy but beautiful places</h1>
       <p>
         {" "}
