@@ -1,5 +1,6 @@
 import "./PlaceEntry.css";
-
+import {PlaceViewProps} from "./MainContent"
+/*
 interface PlaceEntryProps {
   imageURL: string;
   imageAlt: string;
@@ -7,15 +8,15 @@ interface PlaceEntryProps {
   countryName: string;
   mapURL: string;
   text: string;
-}
-function PlaceEntry(props: PlaceEntryProps): JSX.Element {
+} */
+function PlaceEntry(props: PlaceViewProps): JSX.Element {
   return (
     <section className="flex-card">
-      <img src={props.imageURL} alt={props.imageAlt} className="card-image" />
-      <h2>{props.placeName}</h2>
-      <h3>{props.countryName}</h3>
-      <p>{props.text}</p>
-      <a href={props.mapURL}>Click</a>
+      <img src={props.place.imageURL} alt={props.place.imageAlt} className="card-image" />
+      <h2>{props.place.placeName}</h2>
+      <h3>{props.place.countryName}</h3>
+      <p>{props.place.text}</p>
+      <a href={props.place.mapURL}>Click</a>
     </section>
   );
 }
